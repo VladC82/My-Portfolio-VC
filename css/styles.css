@@ -51,7 +51,7 @@ video {
 
 .hero-image-box::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -59,10 +59,19 @@ video {
   left: 0;
 }
 
-.hero-image {
+.hero-image,
+.hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-video {
+  background-color: #000;
+  background-image: url("../img/Check\ it\ out.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-text-box {
@@ -76,14 +85,71 @@ video {
 
 .hero-heading {
   font-size: 2rem;
+  line-height: 2rem;
   letter-spacing: 0, 05rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
+  color: rgb(57, 248, 9);
 }
 
 .hero-text {
   font-size: 1rem;
   margin-top: 0.5rem;
-  color: blue;
+  color: rgb(0, 255, 42);
+}
+
+/* Add Media Queries for Large Screens*/
+
+@media (min-width: 600px) {
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .hero-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .hero-text-box {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .hero-heading {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+/* Portfolio Gallery Styles */
+.portfolio-container {
+  margin: 1rem auto 0 auto;
+}
+
+.portfolio-container h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-rows: 300px;
+}
+
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.5);
 }
