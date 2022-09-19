@@ -4,10 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>My Portfolio</title>
   </head>
   <body>
+    <!--Begin Top Nav-->
+     <nav id="top-nav-bar" class="nav-bar top-nav">
+      <h1 class="logo"><a href="index.html">Vlad`s Portfolio</a></h1>
+      <ul class="nav-menu">
+        <li class="nav-itrem"><a href="#portfolio">Portfoilio</a></li>
+        <li class="nav-itrem"><a href="#about">About</a></li>
+        <li class="nav-item social-nav-item">
+          <a href="http://twitter.com" aria-label="Link to Twitter">
+            <i class=" fab fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item social-nav-item">  <a href="http://instagram.com" aria-label="Link to Instagram">
+          <i class=" fab fa-instagram" aria-hidden="true"></i>
+        </a></li>
+        <li class="nav-item social-nav-item"><a href="http://linkedin.com" aria-label="Link to Linkedin">
+          <i class=" fab fa-linkedin" aria-hidden="true"></i>
+        </a></li>
+        <li class="nav-item social-nav-item"><a href="http://github.com/VladC82" aria-label="Link to GitHub">
+          <i class=" fab fa-github" aria-hidden="true"></i>
+        </a></li>
+      </ul>
+     </nav>
+    <!--End Top Nav-->
     <!--Begin Hero Header-->
     <header class="hero-box">
       <section class="hero-image-box">
@@ -16,16 +41,21 @@
       <section class="hero-text-box">
         <h1 class="hero-heading">Creativity like the nature</h1>
         <p class="hero-text">Surf on with Vlad`s creative project</p>
+        <p>
+          <a href="#portfolio">
+            <button type="button" class="hero-button">View Portfolio</button>
+          </a>
+        </p>
       </section>
     </header>
     <!-- End Hero Header -->
 
     <!-- Begin Portfolio-->
-<section class="portfolio-container">
+<section id="portfolio" class="portfolio-container section-stop">
   <h1>Portfolio</h1>
   <section class="portfolio-gallery">
       <div class="gallery-item">
-          <a href="img/Check it out.jpg"class="glightbox">
+          <a href="img/Check it out.jpg"class="glightbox" data-glightbox="title : Nature; descrition: This is a picture made by me">
            <img src="img/Check it out.jpg" alt="A image of nature" class="gallery-img"></a>
       </div>
       <div class="gallery-item">
@@ -41,5 +71,61 @@
      <img src="img/nature.jpg" alt="A image of beatiful nature" class="gallery-img"></a>
 </div>
 </section>
+<!--End Portfolio-->
+
+<!--Begin About-->
+<section id="about" class="about-container section-stop">
+<section class="about-text">
+  <h1>Vlad`s first project</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt, nam ipsum, obcaecati facilis reprehenderit laborum tenetur ipsa eius praesentium doloremque est laudantium molestias ea omnis nulla assumenda explicabo laboriosam!</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde repellat nobis excepturi aspernatur ex blanditiis.
+  </p>
+  <p><a href="mailto:dsdcrc@yahoo.com">Email me</a> dsdcrc@yahoo.com</p>
+  <div class="about-social">
+    <a href="http://twitter.com" aria-label="Link to Twitter">
+      <i class=" fab fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a href="http://instagram.com" aria-label="Link to Instagram">
+      <i class=" fab fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="http://linkedin.com" aria-label="Link to Linkedin">
+      <i class=" fab fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <a href="http://github.com/VladC82" aria-label="Link to GitHub">
+      <i class=" fab fa-github" aria-hidden="true"></i>
+    </a>
+    
+  </div>
+</section>
+<section class="about-imag">
+  <img src="img/nature.jpg" alt="Profile Picture">
+</section>
+</section>
+
+<!--End About-->
+
+<!--Begin Footer-->
+
+<!--End Footer-->
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  }
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop >20 )
+        document.getElementById("top-nav-bar").style.background = "#000000";  
+  }
+  else {
+    document.getElementById("top-nav-bar").style.background = "none";
+  }
+ 
+
+</script>
+
+<script src="js/glightbox.min.js"></script>
+<script type="text/javascript">
+  const lightbox = GLightbox({ loop: true});
+</script>
   </body>
 </html>
