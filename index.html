@@ -10,17 +10,18 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <div>
+      <span class="fa-font-awesome-logo-full"></span>
+    </div>
     <!--Begin Top Nav-->
      <nav id="top-nav-bar" class="nav-bar top-nav">
-      <h1 class="logo"><a href="index.html">Vlad`s Portfolio</a></h1>
+      <h1 class="logo">Vlad`s Portfolio</h1>
       <ul class="nav-menu">
         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item social-nav-item">
-          <a href="http://twitter.com" aria-label="Link to Twitter">
-            <i class=" fab fa-twitter" aria-hidden="true"></i>
-          </a>
-        </li>
+        <li class="nav-item social-nav-item">  <a href="http://twitter.com" aria-label="Link to twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a></li>
         <li class="nav-item social-nav-item">  <a href="http://instagram.com" aria-label="Link to Instagram">
           <i class=" fab fa-instagram" aria-hidden="true"></i>
         </a></li>
@@ -31,17 +32,20 @@
           <i class=" fab fa-github" aria-hidden="true"></i>
         </a></li>
       </ul>
-     </nav>
+     </nav>  
     <!--End Top Nav-->
 
     <!--Begin Hero Header-->
     <header class="hero-box">
       <section class="hero-image-box">
+        <div class="gallery-item">
+          <a href="img/background.jpg"class="glightbox" data-glightbox="title : Nature; descrition: This is a picture made by me">
+           <img src="img/background.jpg" alt="A image of nature" class="gallery-img"></a>
+      </div>
       </section>
       <section class="hero-text-box">
-        <h1 class="hero-heading">Creativity like the nature</h1>
-        <p class="hero-text">Surf on with Vlad`s creative project</p>
-        <p>
+        <h1 class="hero-heading">Lovely nature</h1>
+                <p>
           <a href="#portfolio">
             <button type="button" class="hero-button">View Portfolio</button>
           </a>
@@ -57,7 +61,7 @@
       <div class="gallery-item">
           <a href="img/Check it out.jpg"class="glightbox" data-glightbox="title : Nature; descrition: This is a picture made by me">
            <img src="img/Check it out.jpg" alt="A image of nature" class="gallery-img"></a>
-      </div>
+     </div>
       <div class="gallery-item">
         <a href="img/forest1.jpg"class="glightbox">
          <img src="img/forest1.jpg " alt="A image of forest" class="gallery-img"></a>
@@ -67,8 +71,24 @@
        <img src="img/forest2.jpg" alt="A image inside the forest" class="gallery-img"></a>
   </div>
   <div class="gallery-item">
+    <a href="img/cascade1.jpg"class="glightbox">
+     <img src="img/cascade1.jpg" alt="A nice cascade" class="gallery-img"></a>
+</div>
+  <div class="gallery-item">
     <a href="img/nature.jpg"class="glightbox">
      <img src="img/nature.jpg" alt="A image of beatiful nature" class="gallery-img"></a>
+</div>
+<div class="gallery-item">
+  <a href="img/nature-very-beautiful-scene-try-capture-some-picture-memorize-your-mind-57684946.jpg"class="glightbox">
+   <img src="img/nature-very-beautiful-scene-try-capture-some-picture-memorize-your-mind-57684946.jpg" alt="A image of beatiful nature" class="gallery-img"></a>
+</div>
+<div class="gallery-item">
+  <a href="img/nordheimer.jpg"class="glightbox">
+   <img src="img/nordheimer.jpg" alt="A image of beatiful nature" class="gallery-img"></a>
+</div>
+<div class="gallery-item">
+  <a href="img/begining.jpg"class="glightbox">
+   <img src="img/begining.jpg" alt="A image of beatiful nature" class="gallery-img"></a>
 </div>
 </section>
 <!--End Portfolio-->
@@ -104,31 +124,7 @@
 
 <!--End About-->
 
-<!--Begin Footer-->
-<footer>
-  <nav class="nav-bar">
-    <h1 class="logo"><a href="index.html">Vlad`s Portfolio</a></h1>
-    <ul class="nav-menu">
-      <li class="nav-itrem"><a href="#portfolio">Portfolio</a></li>
-      <li class="nav-itrem"><a href="#about">About</a></li>
-      <li class="nav-item social-nav-item">
-        <a href="http://twitter.com" aria-label="Link to Twitter">
-          <i class=" fab fa-twitter" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="nav-item social-nav-item">  <a href="http://instagram.com" aria-label="Link to Instagram">
-        <i class=" fab fa-instagram" aria-hidden="true"></i>
-      </a></li>
-      <li class="nav-item social-nav-item"><a href="http://linkedin.com" aria-label="Link to Linkedin">
-        <i class=" fab fa-linkedin" aria-hidden="true"></i>
-      </a></li>
-      <li class="nav-item social-nav-item"><a href="http://github.com/VladC82" aria-label="Link to GitHub">
-        <i class=" fab fa-github" aria-hidden="true"></i>
-      </a></li>
-    </ul>
-   </nav>
-</footer>
-<!--End Footer-->
+
 <script>
   window.onscroll = function () {
     scrollFunction();
