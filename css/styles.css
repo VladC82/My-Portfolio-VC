@@ -42,9 +42,9 @@ video {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  line-height: 1rem;
+  line-height: 2rem;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   z-index: 100;
   height: 6rem;
 }
@@ -101,12 +101,12 @@ video {
 .nav-menu a {
   font-weight: 400;
   letter-spacing: 0.1rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.836);
   transition: all ease 0.1s;
 }
 
 .nav-menu a:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.089);
 }
 
 /* Top Navbar Only Styles */
@@ -128,7 +128,7 @@ video {
 
 .top-nav .logo a,
 .top-nav .nav-menu a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .top-nav .nav-menu a {
@@ -203,23 +203,23 @@ video {
   letter-spacing: 0, 05rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgb(57, 248, 9);
+  color: rgb(0, 0, 0);
 }
 
 .hero-text {
   font-size: 1rem;
   margin-top: 0.5rem;
-  color: rgb(0, 255, 42);
+  color: rgb(0, 0, 0);
 }
 
 .hero-button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   font-weight: bold;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   margin-top: 2rem;
 }
@@ -269,7 +269,7 @@ video {
 
 .about-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   margin: 1rem auto 0 auto;
 }
 
@@ -306,8 +306,8 @@ video {
 
 @media (min-width: 600px) {
   .hero-heading {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .hero-text {
     font-size: 2rem;
