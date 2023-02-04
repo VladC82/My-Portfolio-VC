@@ -49,12 +49,13 @@ img {
 .nav-item {
   white-space: nowrap;
 }
+
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  line-height: 2rem;
+  line-height: 0.5rem;
   overflow: hidden;
   z-index: 100;
   height: 6rem;
@@ -79,8 +80,8 @@ img {
 }
 
 .social-nav-item {
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex-grow: 1rem;
+  flex-shrink: 1rem;
   flex-basis: 10%;
   padding: 0 0.2rem;
 }
