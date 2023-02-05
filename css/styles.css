@@ -6,12 +6,6 @@ html {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-:host,
-:root {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
-}
-
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: initial;
@@ -179,7 +173,7 @@ img {
   line-height: 0.5rem;
   letter-spacing: 0, 05rem;
   font-weight: lighter;
-  text-transform: uppercase;
+  text-transform: full-size-kana;
   color: rgb(0, 0, 0);
 }
 
