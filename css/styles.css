@@ -95,7 +95,7 @@ img {
 }
 
 .nav-menu a {
-  font-weight: 400;
+  font-weight: 50;
   letter-spacing: 0.1rem;
   border-bottom: 1px solid rgb(0, 0, 0);
   transition: all ease 0.1s;
@@ -110,9 +110,8 @@ img {
 /* modern browsers */
 @supports (position: sticky) {
   .top-nav {
-    position: -webkit-sticky; /*Safari */
+    /*Safari */
     position: sticky;
-  }
 }
 
 .top-nav .logo a,
