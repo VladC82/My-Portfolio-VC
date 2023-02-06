@@ -112,6 +112,7 @@ img {
   .top-nav {
     /*Safari */
     position: sticky;
+  }
 }
 
 .top-nav .logo a,
